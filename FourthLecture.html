@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+    <link rel="stylesheet" href="Third_Lecture_Project.css">
+</head>
+<body>
+<header>
+    <h1 id="asd">Forms</h1>
+</header>
+
+<main>
+
+    <form>
+        <!--lable is associated with id-->
+        <!--name is same as db -->
+
+        <label for="userName">Name :</label>
+        <input
+                type="text"
+                name="userName"
+                id="userName"
+                placeholder="User Name"
+                required>
+
+        <br><br>
+
+        <label for="email">Email : </label>
+        <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email address"
+                required>
+
+        <br><br>
+        <label for="password">Password :</label>
+        <input type="password"
+               name="password"
+               id="password"
+               placeholder="Password"
+               required>
+
+
+        <br><br>
+        <label for="Age">Age :</label>
+        <input type="number"
+               name="Age"
+               id="Age"
+               placeholder="Age"
+               required>
+        <br><br>
+
+
+        <label for="Male">Male :</label>
+        <input type="radio"
+               name="Gender"
+               id="Male"
+               value="Male"
+               required>
+
+        <label for="Female">FeMale :</label>
+        <input type="radio"
+                   name="Gender"
+                   id="Female"
+                   placeholder="Gender"
+                   value="FeMale"
+                   required>
+
+<!--Here value menas hidden data send to server user select and value one go to server-->
+        <br><br>
+        <label for="Course">Course :</label>
+        <select name="Course" id="Course">
+            <option value="React">React</option>
+            <option value="angular">angular</option>
+            <option value="java">java</option>
+        </select>
+
+
+        <br><br>
+
+
+        <label for="c++">C++ :</label>
+        <input type="checkbox" name="Subject" id="c++" value="C++">
+
+
+        <label for="java">Java :</label>
+        <input type="checkbox" name="Subject" id="java" value="java">
+
+
+
+        <label for="python">C++ :</label>
+        <input type="checkbox" name="Subject" id="python" value="python">
+
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+        <br><br>
+    </form>
+
+</main>
+
+
+<footer>
+    <h3>Contact US</h3>
+</footer>
+</body>
+</html>
